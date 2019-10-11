@@ -11,7 +11,7 @@ class Automator:
         """
         device: 如果是 USB 连接，则为 adb devices 的返回结果；如果是模拟器，则为模拟器的控制 URL 。
         """
-        self.d = u2.connect(device)
+        self.d = u2.connect()
         self.upgrade_list = upgrade_list
         self.harvest_filter = harvest_filter
         self.dWidth, self.dHeight = self.d.window_size()
